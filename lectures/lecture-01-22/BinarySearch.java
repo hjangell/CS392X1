@@ -7,8 +7,8 @@ public class BinarySearch {
     public int indexOf(int[] A, int key) {
         int lo = 0;
         int hi = A.length - 1;
-	// HX: Do search in A[lo..hi]
-	while (lo <= hi) {
+		// HX: Do search in A[lo..hi]
+		while (lo <= hi) {
             // Key is in A[lo..hi] or not present.
             final int mid = lo + (hi - lo) / 2;
             if      (key < A[mid]) hi = mid - 1;
