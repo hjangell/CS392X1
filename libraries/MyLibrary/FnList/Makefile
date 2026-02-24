@@ -1,5 +1,5 @@
 ########################(beg of [Makefile])########################
-Library00=./../..
+MyLibrary=./../..
 ###################################################################
 
 comp::
@@ -13,7 +13,7 @@ cleanall:: ; rm -f *.class
 
 ###################################################################
 
-comp:: ; javac -cp $(Library00) FnList.java
-comp:: ; javac -cp $(Library00) FnListSUtil.java
+comp:: ; javac -cp $(MyLibrary) FnList.java
+comp:: ; javac -cp $(MyLibrary) FnListSUtil.java
 
 ########################(end of [Makefile])########################
