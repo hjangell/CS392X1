@@ -155,6 +155,43 @@ public class FnListSUtil {
 		return head;
 	}
 
+	//
+
+	public static<T> T insertion_sort(FnList<T> xs, ToIntBiFunction<T,T> cmp) {
+		// Personal implementation of insertion sort
+			// For cmp, an example for an Int_list would be 
+				// BiPredicate<Integer, Integer> equalsTo = (a, b) -> { return a - b == 0 ; };
+		FnList<T> sorted = FnListSUtil.nil();
+		FnList<T> cur = xs;
+
+		while(cur.consq()) {
+			T ins = cur.hd();
+
+			if(sorted.nilq() || cmp.applyAsInt(ins, sorted.hd()) <= 0) {
+				sorted = FnListSUtil.cons(ins, sorted);
+			} else {
+
+				FnList<T> before = FnListSUtil.nil();
+				while(sorted.consq() && cmp.applyAsInt(ins, sorted.hd()) >= 0) {
+					before = FnListSUtil.cons(sorted.hd(), before);
+					sorted = sorted.tl();
+				}
+
+				sorted = FnListSUtil.cons(ins, sorted);
+				while(before.consq()) {
+					sorted = FnListSUtil.cons(before.hd(), sorted);
+					before = before.tl();
+				}
+
+			}
+
+			cur = cur.tl();
+			
+		}
+
+		return sorted;
+	}
+
 	
 
 } // end of [public class FnListSUtil{...}]
