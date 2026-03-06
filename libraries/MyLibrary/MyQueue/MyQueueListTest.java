@@ -1,4 +1,4 @@
-import Library.MyQueue.*;
+import MyLibrary.MyQueue.*;
 
 public class MyQueueListTest {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class MyQueueListTest {
 	itms.deque$exn(); itms.deque$exn();
 	itms.enque$exn(4);
 	itms.enque$exn(5);
-	itms.System$out$print(); System.out.println();
+	/*itms.System$out$print(); System.out.println();
     	System.out.print("MyQueueRev(");
 	itms.irforitm
 	(
@@ -20,6 +20,6 @@ public class MyQueueListTest {
 	      }
 	      System.out.print(itm.toString());
 	  }
-	); System.out.print(")"); System.out.println();
+	); System.out.print(")"); System.out.println();*/
     }
 }

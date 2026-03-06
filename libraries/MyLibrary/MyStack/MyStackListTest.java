@@ -1,4 +1,4 @@
-import Library.MyStack.*;
+import MyLibrary.MyStack.*;
 
 public class MyStackListTest {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class MyStackListTest {
 		itms.pop$exn(); itms.pop$exn();
 		itms.push$exn(4);
 		itms.push$exn(5);
-		itms.System$out$print(); System.out.println();
+		/*itms.System$out$print(); System.out.println();
 			System.out.print("MyStackRev(");
 		itms.irforitm
 		(
@@ -21,6 +21,6 @@ public class MyStackListTest {
 			}
 			System.out.print(itm.toString());
 		}
-		); System.out.print(")"); System.out.println();
+		); System.out.print(")"); System.out.println();*/
     }
 }

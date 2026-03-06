@@ -1,4 +1,4 @@
-import Library.MyQueue.*;
+import MyLibrary.MyQueue.*;
 
 public class MyQueueArrayTest {
     public static void main(String[] args) {

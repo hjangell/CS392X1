@@ -157,7 +157,7 @@ public class FnListSUtil {
 
 	//
 
-	public static<T> T insertion_sort(FnList<T> xs, ToIntBiFunction<T,T> cmp) {
+	public static<T> FnList<T> insertion_sort(FnList<T> xs, ToIntBiFunction<T,T> cmp) {
 		// Personal implementation of insertion sort
 			// For cmp, an example for an Int_list would be 
 				// BiPredicate<Integer, Integer> equalsTo = (a, b) -> { return a - b == 0 ; };
